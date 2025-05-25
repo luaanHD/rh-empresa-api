@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "0b3aeb8d-3b43-4ae2-af81-f6762da51569",
+		"name": "Collection RH-Empresa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45296883",
+		"_collection_link": "https://luanmartinstoniolo.postman.co/workspace/Luan-Martins-Toniolo's-Workspac~bc0717fb-cfc5-416b-8870-ad843183ee6c/collection/45296883-0b3aeb8d-3b43-4ae2-af81-f6762da51569?action=share&source=collection_link&creator=45296883"
+	},
+	"item": [
+		{
+			"name": "Criar Departamento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\": \"TI\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/departamentos",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Departamentos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/departamentos",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Departamento por ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/departamentos/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Departamento",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\": \"Tecnologia da Informa\\u00e7\\u00e3o\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/departamentos/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Departamento",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/departamentos/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Departamento com Funcionários",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/departamentos/1/funcionarios",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departamentos",
+						"1",
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Funcionários de um Departamento",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/departamentos/1/funcionarios-list",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departamentos",
+						"1",
+						"funcionarios-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Funcionário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\": \"João Carlos Batista\", \"cargo\": \"Desenvolvedor Pleno\", \"departamento_id\": 1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/funcionarios",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Funcionários",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/funcionarios",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Funcionário por ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/funcionarios/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"funcionarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Funcionário",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\": \"Jo\\u00e3o Pedro\", \"cargo\": \"Pleno\", \"departamento_id\": 1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/funcionarios/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"funcionarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Funcionário",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/funcionarios/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"funcionarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Funcionários com Departamento",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/funcionarios-com-departamento",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"funcionarios-com-departamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Departamento de um Funcionário",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/funcionarios/1/departamento",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"funcionarios",
+						"1",
+						"departamento"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
